@@ -35,9 +35,4 @@ jobs:
       - name: Mike Deploy
         run: |
             mike list
-            mike deploy 1.0.0
-            #   python ./scripts/render_english_only.py
-            #   git fetch origin gh-pages --depth=1 # fix mike's CI update
-            #   mike deploy ${{ env.ACTIONTEST }}  -p --rebase
-            #  mike set-default ${{ env.ACTIONTEST }} -p --rebase
-            #  mike list
+            mike deploy 1.0.0 -p
