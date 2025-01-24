@@ -35,4 +35,4 @@ jobs:
       - name: Mike Deploy
         run: |
             mike list
-            mike deploy 1.0.0
+            mike deploy --push --update-aliases 0.1 latest
