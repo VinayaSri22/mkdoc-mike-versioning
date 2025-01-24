@@ -14,7 +14,7 @@ concurrency:
     cancel-in-progress: true
 
 jobs:
-  deploy:
+  Mike-Deploy:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
@@ -29,6 +29,9 @@ jobs:
       - name : prepare
         run: sh ./prepare.sh
           
+      - name: Git Config
+        run: git config user.name VinayaSri22 && git config user.email gangavarapuvinayasri14@gmail.com
+
       - name: Mike Deploy
         run: |
             mike list
