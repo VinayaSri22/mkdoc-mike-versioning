@@ -2,4 +2,4 @@
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Version 1
+## Version 2

@@ -36,4 +36,7 @@ jobs:
       - name: Mike Deploy
         run: |
             mike list
-            mike deploy --push --update-aliases 0.1 latest
+            mike deploy --push --update-aliases 0.2 latest
+          
+      - name: Mike Set Default
+        run: mike set-default --push latest
